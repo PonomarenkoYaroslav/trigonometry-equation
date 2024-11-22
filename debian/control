@@ -1,0 +1,7 @@
+Source: my_program
+Section: utils
+Priority: optional
+Maintainer: Your Name <your.email@example.com>
+Build-Depends: debhelper (>= 9), g++
+Standards-Version: 3.9.6
+
