@@ -3,6 +3,8 @@
 
 int main() {
     TrigFunction trigFunc;
-    std::cout << "Результат функції: " << trigFunc.FuncA() << std::endl;
+    int n = 5;
+    double x = 0.5;
+    std::cout << "Результат функції: " << trigFunc.FuncA(n, x) << std::endl;
     return 0;
 }

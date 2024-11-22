@@ -1,4 +1,6 @@
+#pragma once
+
 class TrigFunction {
 public:
-    double FuncA(); // Публічна функція, яка наразі повертає 0
+    double FuncA(int n, double x); // Публічна функція, яка наразі повертає 0
 };
