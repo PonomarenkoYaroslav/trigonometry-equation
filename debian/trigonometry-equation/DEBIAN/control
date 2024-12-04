@@ -1,0 +1,10 @@
+Package: trigonometry-equation
+Version: 1.0-1
+Architecture: amd64
+Maintainer: Ponomarenko	Yaroslav	<ponomarenko.yaroslav1@lll.kpi.ua>
+Installed-Size: 23
+Depends: libc6 (>= 2.34), libstdc++6 (>= 4.4)
+Section: utils
+Priority: optional
+Description: A	program	for	solving	trigonometric	equations
+ This	is	a	sample	description	of	the	package.

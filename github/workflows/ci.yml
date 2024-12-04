@@ -1,25 +1,31 @@
-# .github/workflows/build.yml
-name: Build
+name: Build and Compile
 
 on:
-	push:
-		branches: [branchMake]
-	pull_request:
-		branches: [branchMake]
-			
+  push:
+    branches:
+      - branchMake
+  pull_request:
+    branches:
+      - branchMake
+
 jobs:
-	build:
-		runs-on: ubuntu-latest		
-		steps:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up C++ build environment
+        run: sudo apt-get install build-essential
+      - name: Build the project
+        run: make
+				
+			-	name: Build tarball
+				run:	./autogen.sh	&&	./configure	&&	make	dist
 		
-		-	name: Checkout code
-			uses: actions/checkout@v2
-			
-		-	name: Set up C++ envrinment
-			uses: actions/setup-python@v2
-			width:
-				python-version: '3.8'
-			
-		-	name: Build program
-			run: |
-				make
+			- name: Build Debian package
+ 		 		run: dpkg-buildpackage -us -uc
+ 		 	
+ 			- name: Run tests
+  			run: make check
+
+

@@ -1,0 +1,13 @@
+Package: trigonometry-equation-dbgsym
+Package-Type: ddeb
+Source: trigonometry-equation
+Version: 1.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Ponomarenko	Yaroslav	<ponomarenko.yaroslav1@lll.kpi.ua>
+Installed-Size: 29
+Depends: trigonometry-equation (= 1.0-1)
+Section: debug
+Priority: optional
+Description: debug symbols for trigonometry-equation
+Build-Ids: bce8ddd9a4fd836f2230a75723f01be9852ad1ee

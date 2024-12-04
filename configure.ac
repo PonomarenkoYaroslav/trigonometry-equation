@@ -3,3 +3,4 @@ AC_PROG_CXX
 AM_INIT_AUTOMAKE
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT
+AC_CHECK_LIB([gtest], [main], [], [AC_MSG_ERROR([Google Test library not found!])])

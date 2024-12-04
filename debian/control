@@ -1,7 +1,13 @@
-Source: my_program
-Section: utils
-Priority: optional
-Maintainer: Your Name <your.email@example.com>
-Build-Depends: debhelper (>= 9), g++
-Standards-Version: 3.9.6
+Source:	trigonometry-equation
+Section:	utils
+Priority:	optional
+Maintainer:	Ponomarenko	Yaroslav	<ponomarenko.yaroslav1@lll.kpi.ua>
+Build-Depends:	debhelper	(>=	9), g++
+Standards-Version:	4.5.1
+
+Package:	trigonometry-equation
+Architecture:	any
+Depends:	${shlibs:Depends},	${misc:Depends}
+Description:	A	program	for	solving	trigonometric	equations
+	This	is	a	sample	description	of	the	package.
 
